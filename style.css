@@ -6,31 +6,31 @@
 }
 
 body{
-  margin: 0;
+  /* background: orange; */
+  margin: auto;
   font-family: 'Poppins', sans-serif;
 }
 
 .header-container{
-  /* margin-bottom: 60px; */
   margin-block-end: 60px;
 }
 
 .wrapper {
-  border: 1px solid red;
   max-width: 1366px;
   margin: auto;
-  padding-inline: 80px;
 }
 
 .header-content-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .header-logo {
   width: 246px;
+  margin-right: 251px;
   /* height: 40px; */
 }
 
@@ -40,14 +40,15 @@ body{
   text-transform: uppercase;
   width: 254px;
   text-align: -webkit-match-parent;
+  margin-inline-end: 358px;
+
 }
 
 .header-main-menu p {
   margin: 0;
-  /* height: 100%; */
-  /* align-items: center; */
   display: flex;
 }
+
 
 .header-main-menu p a {
   color: var(--colorPrincipal);
@@ -72,34 +73,41 @@ body{
   height: 21px;
 }
 
-.main-grid {
-  display: grid;
-  grid-template-columns: 128px  672px 435px;
-  grid-template-rows: 1000px;
-  grid-template-areas: "modelo imagePrincipal description" ;
-  margin: auto;
+.main-flex {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
 }
 
 .main-grid-pose {
-  grid-area: modelo;
-  margin-inline: 24px;
-  display: block
+  margin-inline-end: 24px;
+  display: block;
+  width: 80px;
+}
+
+.main-grid-pose a {
+  display: block;
+}
+
+.main-grid-pose img:hover{
+  border: 2px solid #4276FB;
 }
 
 .main-grid-image-principal {
-  grid-area: imagePrincipal;
   margin-inline-end: 56px;
-}
-
-.image-princiapl-inlineblock {
   display: flex;
   overflow: auto;
-  width: 100%;
-
+  width: 616px;
 }
 
+.main-grid-image-principal img {
+  width: 100%;
+  width: 620px;
+}
 .main-grid-description {
-  grid-area: description;
+  width: 424px;
 }
 
 .image-principal-btn {
@@ -122,7 +130,7 @@ body{
 
 .main-grid-description h2 {
   font-weight: var(--fontWeightTitle);
-  font-size: 47px;
+  font-size: 46px;
   max-width: 440px;
   margin: 0;
   line-height: 56px;
@@ -170,6 +178,12 @@ body{
   color: var(--colorPrincipal);
 }
 
+.size-hoodie a:hover {
+  background: #4276FB;
+  color: white;
+  border: none;
+}
+
 .inputs {
   display: block;
 
@@ -210,7 +224,7 @@ body{
 
 .main-other-models {
   text-align: center;
-  margin-block-start: 100px;
+  margin-block: 150px;
 }
 
 .title-section-other-models {
