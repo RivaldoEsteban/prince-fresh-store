@@ -110,7 +110,9 @@ body{
 }
 
 .main-grid-pose img:hover{
-  border: 2px solid #4276FB;
+  border: 1px solid #4276FB;
+  height: 120px;
+  box-sizing: border-box;
 }
 
 .main-grid-image-principal {

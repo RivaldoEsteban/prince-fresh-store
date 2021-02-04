@@ -13,6 +13,9 @@ const changePosition3 = document.getElementById('image3')
 const container = document.getElementById('container')
 const bodyContainer = document.getElementById('body-container')
 const modalInput = document.getElementById('modal-input')
+const modelOne = document.getElementById('image1')
+const modelTwo = document.getElementById('image2')
+const modelThree = document.getElementById('image3')
 
 inputBuy.addEventListener('click' , printModal)
 modalClose.addEventListener('click' , close)
@@ -21,16 +24,7 @@ sizeM.addEventListener('click', selecSizeM)
 sizeL.addEventListener('click', selecSizeL)
 sizeXL.addEventListener('click', selecSizeXL)
 sizeXXL.addEventListener('click', selecSizeXXL)
-changePosition1.addEventListener('click' , changeImage)
 modalInput.addEventListener('click' , buyComplete)
-// inputAddToCart.addEventListener('click' , cambioDeEstadoInput)
-
-// function cambioDeEstadoInput() {
-//   inputAddToCart.style.border = '3px solid black'
-//   inputAddToCart.style.background = 'white'
-//   inputAddToCart.style.color = 'black'
-//   inputAddToCart.style.boxSizing = 'border-box'
-// }
 
 function printModal() {
   modal.style.display = 'block';
@@ -81,3 +75,51 @@ function buyComplete () {
   alert('Felicidades! Compra realizada...');
   close();
 }
+
+function transitionOne() {
+  setInterval(() => {
+    modelOne.src = 'images/1.2.png'
+    // console.log(modelOne)
+  }, 3000);
+  setInterval(() => {
+    modelOne.src = 'images/1.3.png'
+    // console.log(modelOne)
+  }, 6000);
+  setInterval(() => {
+    modelOne.src = 'images/verde.png'
+    // console.log(modelOne)
+  },9000);
+}
+transitionOne();
+
+function transitionTwo() {
+  setInterval(() => {
+    modelTwo.src = 'images/2.1.png'
+    // console.log(modelOne)
+  }, 3000);
+  setInterval(() => {
+    modelTwo.src = 'images/2.3.png'
+    // console.log(modelOne)
+  }, 6000);
+  setInterval(() => {
+    modelTwo.src = 'images/2.2.png'
+    // console.log(modelOne)
+  },9000);
+}
+transitionTwo();
+
+function transitionThree() {
+  setInterval(() => {
+    modelThree.src = 'images/3.1.png'
+    // console.log(modelOne)
+  }, 3000);
+  setInterval(() => {
+    modelThree.src = 'images/3.2.png'
+    // console.log(modelOne)
+  }, 6000);
+  setInterval(() => {
+    modelThree.src = 'images/blanco1.png'
+    // console.log(modelOne)
+  },9000);
+}
+transitionThree();
