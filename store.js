@@ -25,6 +25,14 @@ sizeL.addEventListener('click', selecSizeL)
 sizeXL.addEventListener('click', selecSizeXL)
 sizeXXL.addEventListener('click', selecSizeXXL)
 modalInput.addEventListener('click' , buyComplete)
+modelOne.addEventListener('mouseover',transitionOne)
+modelTwo.addEventListener('mouseover',transitionTwo)
+modelThree.addEventListener('mouseover',transitionThree)
+modelOne.addEventListener('click',transitionOne)
+modelTwo.addEventListener('click',transitionTwo)
+modelThree.addEventListener('click',transitionThree)
+
+
 
 function printModal() {
   modal.style.display = 'block';
@@ -77,49 +85,38 @@ function buyComplete () {
 }
 
 function transitionOne() {
-  setInterval(() => {
-    modelOne.src = 'images/1.2.png'
-    // console.log(modelOne)
-  }, 3000);
-  setInterval(() => {
-    modelOne.src = 'images/1.3.png'
-    // console.log(modelOne)
-  }, 6000);
-  setInterval(() => {
-    modelOne.src = 'images/verde.png'
-    // console.log(modelOne)
-  },9000);
+    setTimeout(() => {
+      modelOne.src = 'images/1.2.png'
+    }, 1000);
+    setTimeout(() => {
+      modelOne.src = 'images/1.3.png'
+    }, 2000);
+    setTimeout(() => {
+      modelOne.src = 'images/verde.png'
+    },3000);
 }
-transitionOne();
 
 function transitionTwo() {
-  setInterval(() => {
+  setTimeout(() => {
     modelTwo.src = 'images/2.1.png'
-    // console.log(modelOne)
-  }, 3000);
-  setInterval(() => {
+  }, 1000);
+  setTimeout(() => {
     modelTwo.src = 'images/2.3.png'
-    // console.log(modelOne)
-  }, 6000);
-  setInterval(() => {
+  }, 2000);
+  setTimeout(() => {
     modelTwo.src = 'images/2.2.png'
-    // console.log(modelOne)
-  },9000);
+  },3000);
 }
-transitionTwo();
 
 function transitionThree() {
-  setInterval(() => {
+  setTimeout(() => {
     modelThree.src = 'images/3.1.png'
-    // console.log(modelOne)
-  }, 3000);
-  setInterval(() => {
+  }, 1000);
+  setTimeout(() => {
     modelThree.src = 'images/3.2.png'
-    // console.log(modelOne)
-  }, 6000);
-  setInterval(() => {
+  }, 2000);
+  setTimeout(() => {
     modelThree.src = 'images/blanco1.png'
-    // console.log(modelOne)
-  },9000);
+  }, 3000);
 }
-transitionThree();
+

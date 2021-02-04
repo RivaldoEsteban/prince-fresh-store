@@ -440,3 +440,41 @@ body{
   line-height: 24px;
 }
 
+#image1{
+  height: 512px;
+  width: 340px;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+#image1:hover {
+  border: 3px solid #4276FB;
+}
+
+#image2{
+  height: 512px;
+  width: 340px;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+#image3{
+  height: 512px;
+  width: 340px;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+
+#image2:hover {
+  height: 512px;
+  width: 340px;
+  border: 3px solid #4276FB;
+  box-sizing: border-box;
+}
+
+#image3:hover {
+  height: 512px;
+  width: 340px;
+  border: 3px solid #4276FB;
+  box-sizing: border-box;
+}
