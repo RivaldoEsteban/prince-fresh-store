@@ -7,112 +7,145 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
-  <header class="header-container">
-    <div class="wrapper">
-      <nav class="header-content-navigation">
-        <img  class="header-logo" src="images/logo-fresh.png" alt="logo" title="logo">
-        <div class="header-main-menu">
-          <p>
-            <a href="#shop">shop</a>
-          </p>
-          <p>
-            <a href="#collection">collections</a>
-          </p>
+<body id="body-container">
+   <section class="main-modal-container">
+    <div class="main-modal" id="main-modal">
+      <p class="close" id="close">x</p>
+      <div class="modal-flex">
+        <div class="modal-hoddie-price">
+          <img src="images/compra.png" alt="">
+          <div class="modal-text">
+            <p>Crown
+            Sweatshirt</p>
+            <p>S $85.00</p>
+          </div>
         </div>
-        <div class="header-icons">
-          <img src="images/icons/user.png" alt="icono de usuario" title="icono de usuario">
-          <img src="images/icons/bolsa.png" alt="icono de compra" title="icono de compra">
+        <div class="modal-align">
+            <p>1</p>
+            <hr>
+            <p>Remove</p>
         </div>
-      </nav>
+      </div>
+      <div class="modal-flex price">
+        <p>Subtotal</p>
+        <p>$85.00</p>
+      </div>
+      <p class="descuentos">Shipping, taxes, and discount codes calculated at checkout.</p>
+      <input class="modal-input" id="modal-input" type="submit" value="BUY NOW">
+      <p class="shipping-time">
+        Please Note: All items are pre-order and will ship in 6-10 weeks. Guaranteed holiday delivery.
+      </p>
     </div>
-  </header>
-  <main class="main-container">
-    <div class="wrapper">
-      <section class="main-flex">
-        <div class="main-grid-pose">
-          <a href="#btn-1">
-            <img src="images/1.png" alt="vista por delante de la polera">
-          </a>
-          <a href="#btn-2">
-            <img src="images/2.png" alt="vista por atras de la polera ">
-          </a>
-          <a href="#btn-3">
-            <img src="images/4.png" alt="delantero">
-          </a>
-          <a href="#btn-4">
-            <img src="images/posterior.png" alt="posterior ">
-          </a>
-        </div>
-        <div class="main-grid-image-principal">
-          <img src="images/delante.png" alt="adelante" id="btn-1">
-          <img src="images/atras.png" alt="atras" id="btn-2">
-          <img src="images/polera.png" alt="pecho" id="btn-3">
-          <img src="images/polera1.png" alt="espalda" id="btn-4">
-          <!-- <div class="image-principal-btn">
-            <a href="#btn-1">1</a>
-            <a href="#btn-2">2</a>
-            <a href="#btn-3">3</a>
-            <a href="#btn-4">4</a>
-          </div> -->
-        </div>
-        <div class="main-grid-description">
-          <h2>Crown Sweatshirt</h2>
-          <p class="price-hoodie">$ 80.00</p>
-          <p class="all-sizes">Size</p>
-          <div class="size-hoodie">
-            <a href="#">s</a>
-            <a href="#">m</a>
-            <a href="#">l</a>
-            <a href="#">xl</a>
-            <a href="#">xxl</a>
+  </section>
+  <section class="general-container" id="container">
+    <header class="header-container">
+      <div class="wrapper">
+        <nav class="header-content-navigation">
+          <img  class="header-logo" src="images/logo-fresh.png" alt="logo" title="logo">
+          <div class="header-main-menu">
+            <p>
+              <a href="#shop">shop</a>
+            </p>
+            <p>
+              <a href="#collection">collections</a>
+            </p>
           </div>
-          <div class="inputs">
-            <input class="input1" type="submit" value="add to cart">
-            <input class="input2" type="submit" value="buy it now">
+          <div class="header-icons">
+            <img src="images/icons/user.png" alt="icono de usuario" title="icono de usuario">
+            <img src="images/icons/bolsa.png" alt="icono de compra" title="icono de compra">
           </div>
-          <p class="description-hoodie">
-            Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend.
-          </p>
-          <a class="sizing" href="">Click for Sizing</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container" id="shop">
+      <div class="wrapper">
+        <div class="main-background">
+          <section class="main-flex" id="shop">
+            <div class="main-grid-pose">
+              <a href="#btn-1">
+                <img src="images/1.png" alt="vista por delante de la polera">
+              </a>
+              <a href="#btn-2">
+                <img src="images/2.png" alt="vista por atras de la polera ">
+              </a>
+              <a href="#btn-3">
+                <img src="images/4.png" alt="delantero">
+              </a>
+              <a href="#btn-4">
+                <img src="images/posterior.png" alt="posterior ">
+              </a>
+            </div>
+            <div class="main-grid-image-principal">
+              <img src="images/delante.png" alt="adelante" id="btn-1">
+              <img src="images/atras.png" alt="atras" id="btn-2">
+              <img src="images/polera.png" alt="pecho" id="btn-3">
+              <img src="images/polera1.png" alt="espalda" id="btn-4">
+              <!-- <div class="image-principal-btn">
+                <a href="#btn-1">1</a>
+                <a href="#btn-2">2</a>
+                <a href="#btn-3">3</a>
+                <a href="#btn-4">4</a>
+              </div> -->
+            </div>
+            <div class="main-grid-description">
+              <h2>Crown Sweatshirt</h2>
+              <p class="price-hoodie">$ 80.00</p>
+              <p class="all-sizes">Size</p>
+              <div class="size-hoodie">
+                <a href="#" id="sizeS">s</a>
+                <a href="#" id="sizeM">m</a>
+                <a href="#" id="sizeL">l</a>
+                <a href="#" id="sizeXL">xl</a>
+                <a href="#" id="sizeXXL">xxl</a>
+              </div>
+              <div class="inputs">
+                <input class="input1" type="submit" value="add to cart" id="input1">
+                <input class="input2" type="submit" value="buy now" id="input2">
+              </div>
+              <p class="description-hoodie">
+                Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend.
+              </p>
+              <a class="sizing" href="">Click for Sizing</a>
+            </div>
+          </section>
+          <section class="main-other-models" id="collection">
+            <h1 class="title-section-other-models">YOU MAY ALSO LIKE</h1>
+            <div class="other-models-content">
+              <div class="models">
+                <img src="images/verde.png" alt="" id="image1">
+                <p class="name-models">Fresh Stripe Sweater</p>
+                <p class="price-models">$85.00</p>
+              </div>
+              <div class="models">
+                <img src="images/black.png" alt="" id="image2">
+                <p class="name-models">Fresh Black Tie-Dye Hoodie</p>
+                <p class="price-models">$75.00</p>
+              </div>
+              <div class="models">
+                <img src="images/blanco1.png" alt="" id="image3">
+                <p class="name-models">Pose For It Tee</p>
+                <p class="price-models">$45.00</p>
+              </div>
+            </div>
+          </section>
+          <section class="main-background-image">
+            <img src="images/cover.png" alt="">
+          </section>
         </div>
-      </section>
-      <section class="main-other-models">
-        <h1 class="title-section-other-models">YOU MAY ALSO LIKE</h1>
-        <div class="other-models-content">
-          <div class="models">
-            <img src="images/verde.png" alt="">
-            <p class="name-models">Fresh Stripe Sweater</p>
-            <p class="price-models">$85.00</p>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="wrapper">
+        <section class="footer-content">
+          <img src="images/logo.png" alt="">
+          <div class="footer-redes">
+            <a href=""><img src="images/icons/1.png" alt=""></a>
+            <a href=""><img src="images/icons/2.png" alt=""></a>
           </div>
-          <div class="models">
-            <img src="images/black.png" alt="">
-            <p class="name-models">Fresh Black Tie-Dye Hoodie</p>
-            <p class="price-models">$75.00</p>
-          </div>
-          <div class="models">
-            <img src="images/blanco1.png" alt="">
-            <p class="name-models">Pose For It Tee</p>
-            <p class="price-models">$45.00</p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <section class="main-background-image">
-      <img src="images/cover.png" alt="">
-    </section>
-  </main>
-  <footer class="footer-container">
-    <div class="wrapper">
-      <section class="footer-content">
-        <img src="images/logo.png" alt="">
-        <div class="footer-redes">
-          <a href=""><img src="images/icons/1.png" alt=""></a>
-          <a href=""><img src="images/icons/2.png" alt=""></a>
-        </div>
-      </section>
-    </div>
-  </footer>
+        </section>
+      </div>
+    </footer>
+  </section>
   <script src="store.js"></script>
 </body>
 </html>
