@@ -20,6 +20,7 @@ const price = document.getElementById('modal-price') //precio1
 const subtotal = document.getElementById('precioSubtotal') //precio1
 const select = document.getElementById('select') //precio1
 const precioFinal = document.getElementById('preciototal') //precio1
+const totalHoodie = document.getElementById('cantidad') //precio1
 
 
 console.log(select.value)
@@ -49,6 +50,8 @@ function printModal() {
   bodyContainer.style.background = 'black'
   container.style.position = 'relative'
   container.style.opacity = '.2'
+  totalHoodie.textContent = select.value
+
   const precio = 80;
   const total = Number(select.value) * precio ;
   console.log(total)
@@ -133,8 +136,7 @@ function transitionThree() {
   }, 3000);
 }
 
-
-
 function printPrice() {
   price.textContent = total
 }
+

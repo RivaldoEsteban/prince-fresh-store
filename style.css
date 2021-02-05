@@ -71,14 +71,15 @@ body{
 
 .header-icons {
   width: 80px;
-  height: 28px;
+  /* height: 28px; */
   display: flex;
   gap: 30px;
 }
 
 .header-icons img {
-  width: 21px;
-  height: 21px;
+  /* width: 22px; */
+  /* height: 21px; */
+  /* box-sizing: border-box; */
 }
 
 .main-container{
@@ -102,6 +103,8 @@ body{
   margin-inline: 24px;
   display: block;
   width: 80px;
+  height: 120px;
+  box-sizing: border-box;
 }
 
 .main-grid-pose a {
@@ -109,9 +112,12 @@ body{
 
 }
 
+.main-grid-pose img {
+  border: 2px solid transparent;
+}
+
 .main-grid-pose img:hover{
-  border: 1px solid #4276FB;
-  height: 120px;
+  border: 2px solid #4276FB;
   box-sizing: border-box;
 }
 
@@ -128,6 +134,7 @@ body{
 }
 .main-grid-description {
   width: 424px;
+  margin-top: 32px;
 }
 
 .image-principal-btn {
@@ -171,6 +178,7 @@ body{
   font-size: 20px;
   margin-block: 16px;
   line-height: 24px;
+  font-weight:  var(--fontWeightParagraph);
 }
 
 .size-hoodie {
@@ -220,15 +228,22 @@ body{
   border-radius: 3px;
 }
 
-.input1 {
+.btn1 {
   background: var(--colorPrincipal);
   border: 3px solid transparent;
   width: 424px;
   box-sizing: border-box;
   height: 60px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: var(--fontWeightTitle);
+  font-size: 22px;
+  cursor: pointer;
 }
 
-.input1:hover {
+.btn1:hover {
   background: white;
   color: black;
   font-weight: var(--fontWeightTitle);
@@ -236,9 +251,10 @@ body{
   border: 2px solid black;
   width: 424px;
   box-sizing: border-box;
+
 }
 
-.input2:hover {
+.btn2:hover {
   background: white;
   color: #4276FB;
   font-weight: var(--fontWeightTitle);
@@ -248,14 +264,19 @@ body{
   box-sizing: border-box;
 }
 
-.input2 {
+.btn2 {
   background: #4276FB;
   margin-block-end: 40px;
   border: 3px solid transparent;
   width: 424px;
   box-sizing: border-box;
   height: 60px;
-
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: var(--fontWeightTitle);
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
 }
 
 .description-hoodie {
@@ -272,13 +293,12 @@ body{
 
 .main-other-models {
   text-align: center;
-  padding-block: 150px;
   background: white;
 }
 
 .title-section-other-models {
   font-size: 75px;
-  margin-block-start: 0;
+  margin-block-start: 250px;
   margin-block-end: 64px;
 }
 
@@ -288,6 +308,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 240px;
 }
 
 .name-models{
@@ -344,7 +365,7 @@ body{
 
 .main-modal {
   background-color: white;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 0;
   right: 275px;
@@ -354,7 +375,23 @@ body{
   box-sizing: border-box;
   height: 100vh;
   display: none;
-  /* border: 1px solid red; */
+  border: none;
+  animation-name: modal;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode:backwards;
+}
+
+@keyframes modal {
+  0%{
+    transform: skew(0deg)  translate(200px);
+
+  }
+  100%{
+    /* transform: skew(0deg)  translate(100px); */
+    /* border-radius: 20px; */
+    /* animation: step-end; */
+  }
 }
 
 .close {
@@ -436,8 +473,9 @@ body{
   font-size: 15px;
   margin: 0;
   text-align: center;
-  font-weight: 600;
+  font-weight: normal;
   line-height: 24px;
+  color: var(--colorPrincipal);
 }
 
 #image1{
@@ -481,11 +519,12 @@ body{
 
 .cantidad {
   /* border: 1px solid red; */
-  margin-block: 20px;
+  margin-block: 40px;
 }
 
 .cantidad h3 {
-  margin: 0;
+  margin: 40px 0 16px 0;
+  font-weight: var(--fontWeightParagraph);
 }
 
 .cantidad input {
@@ -497,9 +536,17 @@ body{
   font-size: 24px;
 }
 
+
+
 .select {
+  border: 1px solid rgb(206, 201, 201);
   width: 100px;
-  margin-block: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgba(0 , 0, 0, .1) ;
+}
+
+.select:hover {
+  border: 2px solid #4276FB
 }
 
 .modal-flex-price  {
