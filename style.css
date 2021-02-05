@@ -594,7 +594,7 @@ body{
   max-width: 400px;
   text-align: center;
   background-color: rgb(136, 214, 233);
-  border: 3px solid #4276FB;
+  border: 2px solid #4276FB;
   border-radius: 20px;
   color: white;
   font-size: 22px;
@@ -632,11 +632,14 @@ body{
   /* border: 1px solid black; */
   height: 122px;
   box-sizing: border-box;
+  object-fit: cover;
 }
 
 .two {
   border: 1px solid black;
   box-sizing: border-box;
+  object-fit: cover;
+
 }
 
 .finalizar-modal {
