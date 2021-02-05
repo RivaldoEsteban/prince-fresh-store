@@ -23,6 +23,7 @@ const precioFinal = document.getElementById('preciototal') //precio1
 const totalHoodie = document.getElementById('cantidad') //precio1
 const toBuy = document.getElementById('modal-final')
 const closeModal = document.getElementById('finalizar')
+const body = document.getElementById('body')
 
 console.log(select.value)
 console.log(select.value)
@@ -36,6 +37,7 @@ modelOne.addEventListener('click',transitionOne)
 modelTwo.addEventListener('click',transitionTwo)
 modelThree.addEventListener('click',transitionThree)
 closeModal.addEventListener('click', close)
+// container.addEventListener('click' ,close)
 
 
 //MARCAR LAS TALLAS
@@ -51,7 +53,13 @@ sizeM.addEventListener('dblclick', desmarcarM)
 sizeL.addEventListener('dblclick', desmarcarL)
 sizeXL.addEventListener('dblclick', desmarcarXL)
 sizeXXL.addEventListener('dblclick', desmarcarXXL)
+// container.addEventListener('click' , closeModal)
+// container.addEventListener('click' , closeModalBody)
 
+function closeModalBody() {
+  close()
+  console.log('hola')
+}
 
 function printModal() {
   modal.style.display = 'block';
@@ -60,6 +68,7 @@ function printModal() {
   bodyContainer.style.background = 'black'
   container.style.position = 'relative'
   container.style.opacity = '.2'
+
   totalHoodie.textContent = select.value
   const precio = 80;
   const total = Number(select.value) * precio ;
@@ -67,13 +76,14 @@ function printModal() {
   price.textContent = total
   const priceSub = subtotal.textContent = total
   precioFinal.textContent = priceSub + 5
+  // const cerrar = container.addEventListener('click' , close)
 }
 
 function close() {
   modal.style.display = 'none';
   container.style.background = 'none'
   container.style.opacity = '1'
-   toBuy.style.display = 'none'
+  toBuy.style.display = 'none'
 }
 
 //marcar las tallas

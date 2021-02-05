@@ -394,14 +394,14 @@ body{
   display: none;
   border: 3px solid transparent;
   animation-name: modal;
-  animation-duration: 1s;
+  animation-duration: 500ms;
   animation-timing-function: linear;
   animation-fill-mode:backwards;
 }
 
 @keyframes modal {
   0%{
-    transform: skew(0deg)  translate(200px);
+    transform: skew(0deg)  translate(900px);
   }
   100%{
   }
