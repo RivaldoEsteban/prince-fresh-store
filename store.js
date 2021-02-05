@@ -21,7 +21,8 @@ const subtotal = document.getElementById('precioSubtotal') //precio1
 const select = document.getElementById('select') //precio1
 const precioFinal = document.getElementById('preciototal') //precio1
 const totalHoodie = document.getElementById('cantidad') //precio1
-
+const toBuy = document.getElementById('modal-final')
+const closeModal = document.getElementById('finalizar')
 
 console.log(select.value)
 console.log(select.value)
@@ -34,6 +35,7 @@ modelThree.addEventListener('mouseover',transitionThree)
 modelOne.addEventListener('click',transitionOne)
 modelTwo.addEventListener('click',transitionTwo)
 modelThree.addEventListener('click',transitionThree)
+closeModal.addEventListener('click', close)
 
 
 //MARCAR LAS TALLAS
@@ -50,6 +52,10 @@ sizeL.addEventListener('dblclick', desmarcarL)
 sizeXL.addEventListener('dblclick', desmarcarXL)
 sizeXXL.addEventListener('dblclick', desmarcarXXL)
 
+
+function close() {
+  close()
+}
 
 function printModal() {
   modal.style.display = 'block';
@@ -72,6 +78,7 @@ function close() {
   modal.style.display = 'none';
   container.style.background = 'none'
   container.style.opacity = '1'
+   toBuy.style.display = 'none'
 }
 
 //marcar las tallas
@@ -134,8 +141,12 @@ function desmarcarXXL() {
 };
 
 function buyComplete () {
-  alert('Felicidades! Compra realizada...');
-  close();
+  toBuy.style.display = 'block'
+  // bodyContainer.style.background = 'black'
+  // modal.style.opacity = '1'
+
+  // alert('Felicidades! Compra realizada...');
+  // close();
 }
 
 function transitionOne() {
@@ -177,4 +188,14 @@ function transitionThree() {
 function printPrice() {
   price.textContent = total
 }
+
+const addQuantity = document.getElementById('quantity')
+inputAddToCart.addEventListener('click' , addToCard)
+
+function addToCard(){
+  addQuantity.textContent = select.value
+  addQuantity.style.color = '#4276FB'
+  // addQuantity.style.marginInlineStart = '20px'
+}
+
 

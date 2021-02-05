@@ -70,16 +70,29 @@ body{
 }
 
 .header-icons {
-  width: 80px;
+  /* width: 80px; */
   /* height: 28px; */
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 .header-icons img {
-  /* width: 22px; */
-  /* height: 21px; */
+  width: 25px;
+  height: 25px;
   /* box-sizing: border-box; */
+}
+
+.icons-car p {
+  font-size: 22px;
+  border: 1px  var(--colorPrincipal);
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+.icons-car {
+  display: flex;
+  align-items: center;
 }
 
 .main-container{
@@ -95,7 +108,6 @@ body{
   align-items: flex-start;
   flex-wrap: wrap;
   box-sizing: border-box;
-  /* margin-block-start: 100px; */
   background: white;
 }
 
@@ -325,6 +337,10 @@ body{
   font-weight: var(--fontWeightTitle);
 }
 
+.main-background-image {
+  padding-block-end: 64px;
+}
+
 .main-background-image img {
   width: 100%;
 }
@@ -361,6 +377,7 @@ body{
 
 .main-modal-container{
   position: relative;
+  border: none;
 }
 
 .main-modal {
@@ -375,7 +392,7 @@ body{
   box-sizing: border-box;
   height: 100vh;
   display: none;
-  border: none;
+  border: 3px solid transparent;
   animation-name: modal;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -564,4 +581,72 @@ body{
 
 .color-gray {
   opacity: .3;
+}
+
+.compra-realizada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+
+.modal-finish {
+  max-width: 400px;
+  text-align: center;
+  background-color: rgb(136, 214, 233);
+  border: 3px solid #4276FB;
+  border-radius: 20px;
+  color: white;
+  font-size: 22px;
+  z-index: 200;
+  position: fixed;;
+  top: 0;
+  left: 500px;
+  right: 500px;
+  display: none;
+  animation-name: final;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode:backwards;
+}
+
+@keyframes final {
+  0%{
+    transform: skew(0deg)  translate(0 ,-200px);
+  }
+  100%{
+  }
+}
+
+.modal-finish p {
+  font-family: var(--fontWeightTitle);
+  text-transform: uppercase;
+}
+
+.compra img {
+  /* border: 2px solid black; */
+  margin: 0 0 20px 0;
+}
+
+.one {
+  /* border: 1px solid black; */
+  height: 122px;
+  box-sizing: border-box;
+}
+
+.two {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.finalizar-modal {
+  padding: 10px ;
+  width: 100px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  border: 1px solid rgb(204, 203, 203);
+  font-weight: var(--fontWeightTitle);
+  background: #4276FB;
+  color: white;
+  cursor: pointer;
 }
