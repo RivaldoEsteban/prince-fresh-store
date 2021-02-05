@@ -17,18 +17,40 @@
           <div class="modal-text">
             <p>Crown
             Sweatshirt</p>
-            <p>S $85.00</p>
+            <div class="modal-price">
+              <p>$</p>
+              <p id="modal-price">80</p>
+            </div>
           </div>
         </div>
         <div class="modal-align">
-            <p>1</p>
+            <p id="cantidad">1</p>
             <hr>
             <p>Remove</p>
         </div>
       </div>
-      <div class="modal-flex price">
-        <p>Subtotal</p>
-        <p>$85.00</p>
+      <div class="modal-flex-price">
+        <div class="price">
+          <p>inpuestos</p>
+          <div class="modal-price">
+          <p>$</p>
+          <p id="impuetos">5</p>
+          </div>
+        </div>
+        <div class="price">
+          <p>Subtotal</p>
+          <div class="modal-price border">
+            <p>$</p>
+            <p id="precioSubtotal">80</p>
+          </div>
+        </div>
+        <div class="price">
+          <p>TOTAL</p>
+          <div class="modal-price">
+            <p>$</p>
+            <p id="preciototal">85</p>
+          </div>
+        </div>
       </div>
       <p class="descuentos">Shipping, taxes, and discount codes calculated at checkout.</p>
       <input class="modal-input" id="modal-input" type="submit" value="BUY NOW">
@@ -97,6 +119,17 @@
                 <a href="#" id="sizeL">l</a>
                 <a href="#" id="sizeXL">xl</a>
                 <a href="#" id="sizeXXL">xxl</a>
+              </div>
+              <div class="cantidad">
+                <h3>Cantidad</h3>
+                <select name="select" class="select" id="select">
+                  <option value="1" id="value1">1</option>
+                  <option value="2" id="value2">2</option>
+                  <option value="3" id="value3"> 3</option>
+                  <option value="4" id="value4"> 4</option>
+                  <option value="5" id="value5"> 5</option>
+                </select>
+                </select>
               </div>
               <div class="inputs">
                 <input class="input1" type="submit" value="add to cart" id="input1">

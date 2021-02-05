@@ -16,7 +16,14 @@ const modalInput = document.getElementById('modal-input')
 const modelOne = document.getElementById('image1')
 const modelTwo = document.getElementById('image2')
 const modelThree = document.getElementById('image3')
+const price = document.getElementById('modal-price') //precio1
+const subtotal = document.getElementById('precioSubtotal') //precio1
+const select = document.getElementById('select') //precio1
+const precioFinal = document.getElementById('preciototal') //precio1
 
+
+console.log(select.value)
+console.log(select.value)
 inputBuy.addEventListener('click' , printModal)
 modalClose.addEventListener('click' , close)
 sizeS.addEventListener('click', selecSizeS)
@@ -42,6 +49,12 @@ function printModal() {
   bodyContainer.style.background = 'black'
   container.style.position = 'relative'
   container.style.opacity = '.2'
+  const precio = 80;
+  const total = Number(select.value) * precio ;
+  console.log(total)
+  price.textContent = total
+  const priceSub = subtotal.textContent = total
+  precioFinal.textContent = priceSub + 5
 }
 
 function close() {
@@ -120,3 +133,8 @@ function transitionThree() {
   }, 3000);
 }
 
+
+
+function printPrice() {
+  price.textContent = total
+}

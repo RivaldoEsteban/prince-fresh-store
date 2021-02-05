@@ -478,3 +478,42 @@ body{
   border: 3px solid #4276FB;
   box-sizing: border-box;
 }
+
+.cantidad {
+  /* border: 1px solid red; */
+  margin-block: 20px;
+}
+
+.cantidad h3 {
+  margin: 0;
+}
+
+.cantidad input {
+  margin: 0 ;
+}
+
+.modal-price {
+  display: flex;
+  font-size: 24px;
+}
+
+.select {
+  width: 100px;
+  margin-block: 30px;
+}
+
+.modal-flex-price  {
+  display: block;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.modal-price.border {
+  border-bottom: 1px solid var(--colorPrincipal);
+}
