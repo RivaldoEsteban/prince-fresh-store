@@ -368,7 +368,7 @@ body{
   position: fixed;
   z-index: 100;
   top: 0;
-  right: 275px;
+  right: 20px;
   width: 460px;
   bottom: 0;
   padding: 20px 40px;
@@ -377,7 +377,7 @@ body{
   display: none;
   border: none;
   animation-name: modal;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode:backwards;
 }
@@ -388,9 +388,6 @@ body{
 
   }
   100%{
-    /* transform: skew(0deg)  translate(100px); */
-    /* border-radius: 20px; */
-    /* animation: step-end; */
   }
 }
 
