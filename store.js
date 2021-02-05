@@ -53,10 +53,6 @@ sizeXL.addEventListener('dblclick', desmarcarXL)
 sizeXXL.addEventListener('dblclick', desmarcarXXL)
 
 
-function close() {
-  close()
-}
-
 function printModal() {
   modal.style.display = 'block';
   modal.style.background = 'white';
