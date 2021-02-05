@@ -60,7 +60,6 @@ function close() {
 function printModal() {
   modal.style.display = 'block';
   modal.style.background = 'white';
-  modal.style.border = '3px solid black';
   modal.style.boxShadow = '5px 0 0 5px rgba(20px , 10px , 0, .5);';
   bodyContainer.style.background = 'black'
   container.style.position = 'relative'
