@@ -27,11 +27,6 @@ console.log(select.value)
 console.log(select.value)
 inputBuy.addEventListener('click' , printModal)
 modalClose.addEventListener('click' , close)
-sizeS.addEventListener('click', selecSizeS)
-sizeM.addEventListener('click', selecSizeM)
-sizeL.addEventListener('click', selecSizeL)
-sizeXL.addEventListener('click', selecSizeXL)
-sizeXXL.addEventListener('click', selecSizeXXL)
 modalInput.addEventListener('click' , buyComplete)
 modelOne.addEventListener('mouseover',transitionOne)
 modelTwo.addEventListener('mouseover',transitionTwo)
@@ -40,6 +35,20 @@ modelOne.addEventListener('click',transitionOne)
 modelTwo.addEventListener('click',transitionTwo)
 modelThree.addEventListener('click',transitionThree)
 
+
+//MARCAR LAS TALLAS
+sizeS.addEventListener('click', selecSizeS)
+sizeM.addEventListener('click', selecSizeM)
+sizeL.addEventListener('click', selecSizeL)
+sizeXL.addEventListener('click', selecSizeXL)
+sizeXXL.addEventListener('click', selecSizeXXL)
+
+// //DESMARCAR LAS TALLAS
+sizeS.addEventListener('dblclick', desmarcarS)
+sizeM.addEventListener('dblclick', desmarcarM)
+sizeL.addEventListener('dblclick', desmarcarL)
+sizeXL.addEventListener('dblclick', desmarcarXL)
+sizeXXL.addEventListener('dblclick', desmarcarXXL)
 
 
 function printModal() {
@@ -51,7 +60,6 @@ function printModal() {
   container.style.position = 'relative'
   container.style.opacity = '.2'
   totalHoodie.textContent = select.value
-
   const precio = 80;
   const total = Number(select.value) * precio ;
   console.log(total)
@@ -64,9 +72,9 @@ function close() {
   modal.style.display = 'none';
   container.style.background = 'none'
   container.style.opacity = '1'
-
 }
 
+//marcar las tallas
 function selecSizeS() {
   sizeS.style.color = 'white'
   sizeS.style.background = '#4276FB'
@@ -92,9 +100,39 @@ function selecSizeXXL() {
   sizeXXL.style.background = '#4276FB'
   sizeXXL.style.border = 'none'
 }
-function changeImage() {
-  changePosition1.textContent = 'hola'
-}
+
+//DESMARCAR
+function desmarcarS() {
+  sizeS.style.color = 'black'
+  sizeS.style.background = 'none'
+  sizeS.style.border = '1px solid black '
+  console.log('adsas')
+};
+
+function desmarcarM() {
+  sizeM.style.color = 'black'
+  sizeM.style.background = 'none'
+  sizeM.style.border = '1px solid black '
+};
+
+function desmarcarL() {
+  sizeL.style.color = 'black'
+  sizeL.style.background = 'none'
+  sizeL.style.border = '1px solid black '
+};
+
+function desmarcarXL() {
+  sizeXL.style.color = 'black'
+  sizeXL.style.background = 'none'
+  sizeXL.style.border = '1px solid black '
+};
+
+function desmarcarXXL() {
+  sizeXXL.style.color = 'black'
+  sizeXXL.style.background = 'none'
+  sizeXXL.style.border = '1px solid black '
+};
+
 function buyComplete () {
   alert('Felicidades! Compra realizada...');
   close();

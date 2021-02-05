@@ -385,7 +385,6 @@ body{
 @keyframes modal {
   0%{
     transform: skew(0deg)  translate(200px);
-
   }
   100%{
   }
@@ -533,8 +532,6 @@ body{
   font-size: 24px;
 }
 
-
-
 .select {
   border: 1px solid rgb(206, 201, 201);
   width: 100px;
@@ -556,8 +553,15 @@ body{
   justify-content: space-between;
 }
 
-
-
 .modal-price.border {
   border-bottom: 1px solid var(--colorPrincipal);
+}
+
+.grupo-zise {
+  display: flex;
+  gap: 20px;
+}
+
+.color-gray {
+  opacity: .3;
 }
