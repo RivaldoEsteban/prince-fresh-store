@@ -385,17 +385,16 @@ body{
   position: fixed;
   z-index: 100;
   top: 0;
-  right: 20px;
+  right: 0;
   width: 460px;
   bottom: 0;
   padding: 20px 40px;
   box-sizing: border-box;
   height: 100vh;
   display: none;
-  border: 3px solid transparent;
   animation-name: modal;
-  animation-duration: 500ms;
-  animation-timing-function: linear;
+  animation-duration: 300ms;
+  animation-delay: 200ms;
   animation-fill-mode:backwards;
 }
 
@@ -495,7 +494,6 @@ body{
   height: 512px;
   width: 340px;
   box-sizing: border-box;
-  border: 3px solid transparent;
 }
 
 #image1:hover {
@@ -593,11 +591,9 @@ body{
 .modal-finish {
   max-width: 400px;
   text-align: center;
-  background-color: rgb(136, 214, 233);
-  border: 2px solid #4276FB;
-  border-radius: 20px;
-  color: white;
+  background-color: white;
   font-size: 22px;
+  border-radius: 4px;
   z-index: 200;
   position: fixed;;
   top: 0;
@@ -605,8 +601,8 @@ body{
   right: 500px;
   display: none;
   animation-name: final;
-  animation-duration: 1s;
-  animation-timing-function: linear;
+  animation-duration: 300ms;
+  /* animation-delay: 300ms; */
   animation-fill-mode:backwards;
 }
 

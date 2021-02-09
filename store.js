@@ -37,6 +37,7 @@ modelOne.addEventListener('click',transitionOne)
 modelTwo.addEventListener('click',transitionTwo)
 modelThree.addEventListener('click',transitionThree)
 closeModal.addEventListener('click', close)
+
 // container.addEventListener('click' ,close)
 
 
@@ -68,7 +69,7 @@ function printModal() {
   bodyContainer.style.background = 'black'
   container.style.position = 'relative'
   container.style.opacity = '.2'
-
+  // container.addEventListener('click' ,close)
   totalHoodie.textContent = select.value
   const precio = 80;
   const total = Number(select.value) * precio ;
@@ -76,7 +77,6 @@ function printModal() {
   price.textContent = total
   const priceSub = subtotal.textContent = total
   precioFinal.textContent = priceSub + 5
-  // const cerrar = container.addEventListener('click' , close)
 }
 
 function close() {
